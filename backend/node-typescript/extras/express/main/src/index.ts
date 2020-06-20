@@ -1,4 +1,4 @@
-import Express from "express";
+import Express, { Response, NextFunction } from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
 import userRouter from "./routes/user";
@@ -10,18 +10,19 @@ async function main() {
 	app.use(bodyParser.json());
 	app.use(cors({ credentials: true }));
 
-	app.get("/", (req, res) => {
+	app.get("/", ({}, res) => {
 		res.send("hello");
 	});
 
 	app.use("/api/user", userRouter);
 
 	// handling errors
-	app.use((error, req, res, next) => {
+	app.use((error: any, {}, res: Response, next: NextFunction) => {
 		if (error) {
 			return res.status(error.status || 400).json({ error });
 		}
 		next();
+		return;
 	});
 
 	app.listen(4000, () => {
