@@ -1,0 +1,13 @@
+{
+	"name": "node-es5",
+	"version": "1.0.0",
+	"main": "src/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"nodemon": "^2.0.4"
+	},
+	"scripts": {
+		"start": "node .",
+		"dev": "nodemon ."
+	}
+}

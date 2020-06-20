@@ -1,0 +1,5 @@
+{
+	"packages": ["typeorm", "pg", "reflect-metadata"],
+	"devPackages": ["@types/reflect-metadata", "@types/pg"],
+	"configs": []
+}

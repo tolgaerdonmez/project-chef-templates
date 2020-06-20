@@ -1,0 +1,5 @@
+{
+	"packages": ["express", "cors", "body-parser", "cookie-parser"],
+	"devPackages": ["@types/express", "@types/cors", "@types/cookie-parser", "@types/body-parser"],
+	"configs": []
+}
