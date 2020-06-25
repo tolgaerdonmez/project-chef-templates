@@ -1,11 +1,11 @@
-import { execSync } from "child_process";
-import {
-  infoMessage,
+const { execSync } = require("child_process");
+const {
   successMessage,
+  infoMessage,
   errorMessage,
-} from "../../../../utils/messages";
+} = require("../../../../utils/messages");
 
-export default function initGatsby({ cwd }) {
+module.exports = function initGatsby({ cwd }) {
   try {
     execSync("gatsby -v");
 
@@ -21,4 +21,4 @@ export default function initGatsby({ cwd }) {
     console.log(infoMessage("Install gatsby-cli using"));
     console.log(successMessage("yarn global add gatsby-cli\n"));
   }
-}
+};
