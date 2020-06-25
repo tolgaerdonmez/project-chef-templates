@@ -1,0 +1,5 @@
+{
+  "configs": [],
+  "packages": ["redux", "redux-thunk", "react-redux"],
+  "devPackages": ["@types/redux", "@types/redux-thunk", "@types/react-redux"]
+}
