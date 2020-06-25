@@ -1,12 +1,11 @@
 import { execSync } from "child_process";
-import { InitFunctionArgs } from "../../../../types/templates";
 import {
   infoMessage,
   successMessage,
   errorMessage,
 } from "../../../../utils/messages";
 
-export default function initGatsby({ cwd }: InitFunctionArgs) {
+export default function initGatsby({ cwd }) {
   try {
     execSync("gatsby -v");
 
