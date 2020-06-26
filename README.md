@@ -1,6 +1,7 @@
 # Welcome to project-chef-templates 👋
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
-[![Twitter: tolgaerdonmez](https://img.shields.io/twitter/follow/tolgaerdonmez.svg?style=social)](https://twitter.com/tolgaerdonmez)
+
+![license](https://img.shields.io/github/license/tolgaerdonmez/project-chef-templates)
+[![npm](https://img.shields.io/npm/v/project-chef)](https://www.npmjs.com/package/project-chef)
 
 > Templates for project-chef CLI
 
@@ -16,7 +17,7 @@
  ┃ ┃ ┗ 📂main
  ┃ ┃ ┃ ┗ 📜main files to be copied
  ┣ 📂init
- ┃ ┗ 📜index.ts
+ ┃ ┗ 📜index.js
  ┗ 📂main
  ┃ ┗ 📜main files to be copied
 ```
@@ -30,7 +31,7 @@ The files here are copied directly to the target
 
 ### init
 
-An index.ts is required for this directory, the default export of this index.ts file is ran while creating your boilerplate in the cli.
+An index.js is required for this directory, the default export of this index.js file is ran while creating your boilerplate in the cli. The init files index.js needs to be in es5 format.
 
 I used this to ran commands like create-react-app, gatsby-cli and nextjs. You can adjust it to your own needs.
 
