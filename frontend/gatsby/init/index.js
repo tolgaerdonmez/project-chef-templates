@@ -1,9 +1,5 @@
 const { execSync } = require("child_process");
-const {
-  successMessage,
-  infoMessage,
-  errorMessage,
-} = require("../../../../utils/messages");
+const { green, red, cyan } = require("kleur");
 
 module.exports = function initGatsby({ cwd }) {
   try {
@@ -14,11 +10,11 @@ module.exports = function initGatsby({ cwd }) {
       cwd,
     });
     console.log(stdout);
-    console.log(successMessage("Gatsby initialized successfully"));
+    console.log(green("Gatsby initialized successfully"));
   } catch (error) {
-    console.log(errorMessage(error), "\n");
-    console.log(errorMessage("This option uses gatsby-cli"));
-    console.log(infoMessage("Install gatsby-cli using"));
-    console.log(successMessage("yarn global add gatsby-cli\n"));
+    console.log(red(error), "\n");
+    console.log(red("This option uses gatsby-cli"));
+    console.log(cyan("Install gatsby-cli using"));
+    console.log(green("yarn global add gatsby-cli\n"));
   }
 };

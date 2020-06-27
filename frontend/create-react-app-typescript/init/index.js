@@ -1,5 +1,5 @@
 const { execSync } = require("child_process");
-const { successMessage } = require("../../../../utils/messages");
+const { green } = require("kleur");
 
 module.exports = function initCreateReactApp({ cwd }) {
   const stdout = execSync(`yarn create react-app . --template typescript`, {
@@ -7,5 +7,5 @@ module.exports = function initCreateReactApp({ cwd }) {
     cwd,
   });
   console.log(stdout);
-  console.log(successMessage("React App initialized successfully"));
+  console.log(green("React App initialized successfully"));
 };
