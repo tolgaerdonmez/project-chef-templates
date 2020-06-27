@@ -1,7 +1,7 @@
 # Welcome to project-chef-templates 👋
 
 ![license](https://img.shields.io/github/license/tolgaerdonmez/project-chef-templates)
-[![npm](https://img.shields.io/npm/v/project-chef)](https://www.npmjs.com/package/project-chef)
+[![npm](https://img.shields.io/npm/v/project-chef)](https://www.npmjs.com/package/project-chef-templates)
 
 > Templates for project-chef CLI
 

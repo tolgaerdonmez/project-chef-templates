@@ -1,12 +1,12 @@
 {
   "name": "project-chef-templates",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Templates for project-chef CLI",
   "main": "index.js",
   "repository": "https://github.com/tolgaerdonmez/project-chef-templates.git",
   "author": "Tolga Erdonmez <tolgaerdonmez@gmail.com>",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "dependencies": {
     "kleur": "^4.0.2"
   }
