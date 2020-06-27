@@ -2,12 +2,23 @@
   "name": "project-chef-templates",
   "version": "1.0.1",
   "description": "Templates for project-chef CLI",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/tolgaerdonmez/project-chef-templates.git",
   "author": "Tolga Erdonmez <tolgaerdonmez@gmail.com>",
   "license": "MIT",
   "private": false,
   "dependencies": {
     "kleur": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.14",
+    "typescript": "^3.9.5"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node ."
+  },
+  "exports": {
+    ".": "./dist/index.js"
   }
 }
