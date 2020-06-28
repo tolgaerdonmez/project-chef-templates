@@ -5,11 +5,11 @@ module.exports = function initGatsby({ cwd }) {
   try {
     execSync("gatsby -v");
 
-    const stdout = execSync(`gatsby new .`, {
+    execSync(`gatsby new .`, {
       encoding: "utf-8",
       cwd,
+      stdio: "inherit",
     });
-    console.log(stdout);
     console.log(green("Gatsby initialized successfully"));
   } catch (error) {
     console.log(red(error), "\n");

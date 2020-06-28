@@ -1,10 +1,10 @@
 const { execSync } = require("child_process");
-const { cyan, green } = require("kleur");
+const { green } = require("kleur");
 
 module.exports = function initNextApp({ cwd }) {
-  const stdout = execSync(`yarn create next-app ${cwd} -e default`, {
+  execSync(`yarn create next-app ${cwd}`, {
     encoding: "utf-8",
+    stdio: "inherit",
   });
-  console.log(cyan(stdout));
   console.log(green("Nextjs initialized successfully"));
 };
