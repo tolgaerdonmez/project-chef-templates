@@ -1,6 +1,6 @@
 {
   "name": "project-chef-templates",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Templates for project-chef CLI",
   "main": "dist/index.js",
   "repository": "https://github.com/tolgaerdonmez/project-chef-templates.git",
