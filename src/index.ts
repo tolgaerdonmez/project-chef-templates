@@ -1,15 +1,14 @@
 import { join } from "path";
 import fetch from "isomorphic-unfetch";
+import NpmAPI from "npm-api";
 
 const currentPath = join(__dirname, "..");
 
 export default currentPath;
-
 const getOnlineVersion = async () => {
-  const endpoint = "https://api.npms.io/v2/package/project-chef-templates";
-  const data = await fetch(endpoint).then((data) => data.json());
-  const version = data.collected.metadata.version;
-  return version;
+  const npm = new NpmAPI();
+  const repo = await npm.repo("project-chef-templates").package();
+  return repo.version;
 };
 
 export const checkLocalVersion = async () => {

@@ -1,6 +1,6 @@
 {
   "name": "project-chef-templates",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Templates for project-chef CLI",
   "main": "dist/index.js",
   "repository": "https://github.com/tolgaerdonmez/project-chef-templates.git",
@@ -10,7 +10,8 @@
   "dependencies": {
     "@types/node-fetch": "^2.5.7",
     "isomorphic-unfetch": "^3.0.0",
-    "kleur": "^4.0.2"
+    "kleur": "^4.0.2",
+    "npm-api": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^14.0.14",
