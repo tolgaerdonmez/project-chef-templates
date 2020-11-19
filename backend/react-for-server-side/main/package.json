@@ -1,0 +1,26 @@
+{
+  "name": "react-for-server-side",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "dependencies": {
+    "puppeteer": "^5.4.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "scripts": {
+    "start": "babel-node .",
+    "build": "babel src --out-dir lib"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-transform-async-to-generator": "^7.10.1",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.12.1",
+    "babel-plugin-styled-components": "^1.11.1"
+  }
+}
